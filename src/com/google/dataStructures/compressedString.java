@@ -2,6 +2,10 @@ package com.google.dataStructures;
 
 public class compressedString {
     public static String compressString(String input) {
+        if (input.length() == 0) {
+            return input;
+        }
+
         StringBuffer compressedString = new StringBuffer();
 
         char currentCharacter = input.charAt(0);
